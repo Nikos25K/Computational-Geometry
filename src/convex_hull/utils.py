@@ -159,11 +159,11 @@ def execute_algorithm(points, algorithm, steps=False, collinear=False):
 
     if not flag_3D:
         if collinear:
-            file_name = f"../files/output/collinear/{algorithm_str}.txt"
+            file_name = f"files/output/collinear/{algorithm_str}.txt"
         else:
-            file_name = f"../files/output/non_collinear/{algorithm_str}.txt"
+            file_name = f"files/output/non_collinear/{algorithm_str}.txt"
     else:
-        file_name = f"../files/output/non_collinear/{algorithm_str}3D.txt"
+        file_name = f"files/output/non_collinear/{algorithm_str}3D.txt"
 
     # Write the points generated to a file
     with open(file_name, "w") as file:

@@ -25,12 +25,12 @@ if __name__ == "__main__":
     is3D = True if algorithm_number == "5" else False
 
     # If the file does not exist, create it and write the points to it
-    file = "../files/points/points.txt" if not is3D else "../files/points/points3D.txt"
+    file = "files/points/points.txt" if not is3D else "files/points/points3D.txt"
 
     # Ask the user if they want to generate collinear points
     collinear = utils.ask_user("Do you want to generate collinear points? (y/n): ")
     if collinear:
-        file = "../files/points/collinear.txt"
+        file = "files/points/collinear.txt"
 
     # Generate the points if the file does not exist
     if not os.path.exists(file):

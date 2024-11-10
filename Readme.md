@@ -25,9 +25,10 @@ Implements a 2D KD-tree to conduct rectangular range searches, retrieving points
 
 ```
 .
-├── src
+├── convex_hull
 │   ├── main.py           # Main entry point for running algorithms
 │   ├── utils.py          # Helper functions for data handling and visualization
+|   ├── files             # Directory containing input and output of program
 │   └── algorithms        # Directory containing algorithm implementations
 │       ├── graham_scan.py
 │       ├── gift_wrapping.py
